@@ -29,18 +29,30 @@
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
-    button {
+    .buttons {
       margin-top: 30px;
+    }
+    button {
       font-size: 1.2em;
       padding: 15px 30px;
-      background-color: #d6336c;
-      color: white;
+      margin: 10px;
       border: none;
       border-radius: 30px;
       cursor: pointer;
     }
-    button:hover {
+    .yes {
+      background-color: #d6336c;
+      color: white;
+    }
+    .yes:hover {
       background-color: #b52a5a;
+    }
+    .no {
+      background-color: #f1c0cc;
+      color: #5a2a2a;
+    }
+    .no:hover {
+      background-color: #e5a6b5;
     }
   </style>
 </head>
@@ -60,9 +72,6 @@
 
   <h2>Will you be my Valentine?</h2>
 
-  <button onclick="alert('Best answer ever 💕')">
-    YES 💖
-  </button>
-
-</body>
-</html>
+  <div class="buttons">
+    <button class="yes" onclick="alert('Best answer ever 💕')">
+      YES
